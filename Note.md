@@ -58,7 +58,15 @@
 ### Rqt
 >*roscore*  
 >*rqt* [plugins--visualizations--plot]  
-
+### Nav
+#### Build a map
+>*roslaunch mx_bringup rbc_lidar_start.launch*  
+>*roslaunch mx_nav mx_gmapping.launch*  
+>*roslaunch mx_rviz gmapping_view.launch*  
+>*roslaunch mx_nav map_save.launch*
+#### navigation 
+>*roslaunch mx_bringup rbc_lidar_start.launch*
+>*roslaunch mx_nav amcl_demo.launch ru*
 # XML
 ><node name="hahahh" pkg="turtlesim" type="turtlesim_node" />  
 
